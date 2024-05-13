@@ -23,3 +23,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ------- yarn -------
+# see excellent notes at: https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+# Also: `yarn.lock` and `.yarnrc.yml` (or it's older counterpart .yarnrc) "should always be stored in your repo"
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+## --> ADD if using zero-install, otherwise do NOT:
+#!.yarn/cache
+
+## --> ELSE ADD if NOT using yarn's zero-install:
+.pnp.*
