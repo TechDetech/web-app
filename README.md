@@ -25,5 +25,9 @@ Added dependencies:
 
 ```bash
 # For development
+yarn --version # It must be `4.2.2`
+yarn install # It will use Yarn's PNP
 yarn run dev --host
 ```
+
+If having troble to configure the IDE integration with [`Yarn Berry`](https://yarnpkg.com/getting-started/editor-sdks)

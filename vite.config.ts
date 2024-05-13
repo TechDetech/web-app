@@ -16,6 +16,26 @@ export default defineConfig({
       },
       devOptions: {
         enabled: true
+      },
+      includeAssets: [],
+      manifest: {
+        name: 'TechDetech WebApp',
+        theme_color: '#8F00FF',
+        icons: [
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any'
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable'
+          }
+
+        ]
       }
     })
   ]
