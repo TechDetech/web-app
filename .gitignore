@@ -24,6 +24,10 @@ dist-ssr
 *.sln
 *.sw?
 
+# IDEs
+.vscode/
+.vim/
+
 # ------- yarn -------
 # see excellent notes at: https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 # Also: `yarn.lock` and `.yarnrc.yml` (or it's older counterpart .yarnrc) "should always be stored in your repo"
