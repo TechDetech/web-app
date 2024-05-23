@@ -35,11 +35,9 @@ yarn install # It will use Yarn's PNP
 yarn run dev --host
 ```
 
-
 ### Configure IDE integration
 
 Read the instructions for [`Yarn Berry`](https://yarnpkg.com/getting-started/editor-sdks)
-
 
 ### Add Fonts
 
@@ -61,7 +59,7 @@ export default defineConfig({
       }
     })
   ]
-});
+})
 ```
 
 2. Extend the `Tailwind` theme
@@ -74,7 +72,7 @@ export default {
     extend: {
       fontFamily: {
         audiowide: ['Audiowide', 'sans-serif']
-      },
+      }
     }
   }
 }

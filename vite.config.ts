@@ -16,12 +16,12 @@ export default defineConfig({
           },
           {
             name: 'Rajdhani',
-            styles: 'wght@400;700',
+            styles: 'wght@400;700'
           },
           {
             name: 'Roboto',
             styles: 'ital,wght@0,400;1,200',
-            defer: true,
+            defer: true
           }
         ]
       }

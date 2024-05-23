@@ -7,7 +7,7 @@ export default {
         rajdhani: ['Rajdhani', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
         audiowide: ['Audiowide', 'sans-serif']
-      },
+      }
     }
   },
   plugins: []
