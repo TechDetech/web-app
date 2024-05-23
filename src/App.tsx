@@ -4,15 +4,20 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>TechDetech App</h1>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 to-indigo-800 flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold text-white mb-8">TechDetech App</h1>
+      <div className="bg-purple-700 rounded-lg p-8 shadow-lg">
+        <button
+          onClick={() => setCount((count) => count + 1)}
+          className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded"
+        >
+          count is {count}
+        </button>
+        <p className="mt-4 text-purple-200">
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-    </>
+    </div>
   )
 }
 
