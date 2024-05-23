@@ -2,7 +2,13 @@
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        rajdhani: ['Rajdhani', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        audiowide: ['Audiowide', 'sans-serif']
+      },
+    }
   },
   plugins: []
 }

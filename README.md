@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
+![TechDetech App Screenshot](public/screenshot.png)
+
 Recommended tools to build this template:
 
 - [FNM](https://github.com/Schniz/fnm) to handle `Node` versions
@@ -22,6 +24,7 @@ Also it has configuration to:
 Added dependencies:
 
 - [effect](https://effect.website/docs/why-effect): to enhace TypeScript functional patterns
+- [unplugin-fonts](https://github.com/cssninjaStudio/unplugin-fonts): to manage fonts
 
 ## Instructions
 
@@ -32,4 +35,47 @@ yarn install # It will use Yarn's PNP
 yarn run dev --host
 ```
 
-If having troble to configure the IDE integration with [`Yarn Berry`](https://yarnpkg.com/getting-started/editor-sdks)
+
+### Configure IDE integration
+
+Read the instructions for [`Yarn Berry`](https://yarnpkg.com/getting-started/editor-sdks)
+
+
+### Add Fonts
+
+1. Add the font description
+
+```ts
+// vite.config.ts
+export default defineConfig({
+  plugins: [
+    // other plugins ...
+    Unfonts({
+      google: {
+        families: [
+          {
+            name: 'Audiowide',
+            styles: 'wght@400'
+          }
+        ]
+      }
+    })
+  ]
+});
+```
+
+2. Extend the `Tailwind` theme
+
+```js
+// tailwind.config.js
+export default {
+  // other configs ...
+  theme: {
+    extend: {
+      fontFamily: {
+        audiowide: ['Audiowide', 'sans-serif']
+      },
+    }
+  }
+}
+```

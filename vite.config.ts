@@ -1,11 +1,31 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import { VitePWA } from 'vite-plugin-pwa'
+import Unfonts from 'unplugin-fonts/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
+    Unfonts({
+      google: {
+        families: [
+          {
+            name: 'Audiowide',
+            styles: 'wght@400'
+          },
+          {
+            name: 'Rajdhani',
+            styles: 'wght@400;700',
+          },
+          {
+            name: 'Roboto',
+            styles: 'ital,wght@0,400;1,200',
+            defer: true,
+          }
+        ]
+      }
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
