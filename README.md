@@ -11,6 +11,8 @@ This template has the minimal and recommended setup to use:
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [Vite](https://vitejs.dev/guide/) as the local dev server
 - [SWC](https://swc.rs/) for Fast Refresh
+- [React Router](https://reactrouter.com/en/main/start/overview) for routing
+- [React Query](https://tanstack.com/query/latest/docs/framework/react/overview) for fetching data
 
 Also it has configuration to:
 
